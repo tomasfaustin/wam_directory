@@ -1,0 +1,9 @@
+<h1>Employee Directory</h1>
+
+<ul>
+    <% @jobs.each do |job| %>
+        <li>
+            <strong> <%= job.name %> </strong> - <%= job.position %>
+        </li>
+    <% end %>
+</ul>
